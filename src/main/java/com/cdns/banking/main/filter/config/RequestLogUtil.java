@@ -7,8 +7,21 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.web.util.ContentCachingRequestWrapper;
 import org.springframework.web.util.WebUtils;
 
+/**
+ * RequestLogUtil
+ * 
+ * @author Deepu Prasad Mathew 21017956
+ * @version 1.0
+ */
 public class RequestLogUtil {
 
+	/**
+	 * readPayload
+	 * 
+	 * @param request HttpServletRequest
+	 * @return String
+	 * @throws IOException
+	 */
 	public static String readPayload(final HttpServletRequest request) throws IOException {
 		String payloadData = null;
 		ContentCachingRequestWrapper contentCachingRequestWrapper = WebUtils.getNativeRequest(request,

@@ -1,10 +1,17 @@
 package com.cdns.banking.main.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.cdns.banking.main.model.UserRequest;
+import com.cdns.banking.main.model.UserResponse;
 import com.cdns.banking.main.service.MainService;
 
 /**
@@ -14,22 +21,27 @@ import com.cdns.banking.main.service.MainService;
  * @version 1.0
  */
 @RestController
+@RequestMapping("/main")
 public class MainServiceController {
 
 	/**
-	 * mainService
+	 * userService
 	 */
 	@Autowired
-	private MainService mainService;
-
+	private MainService userService;
+	
 	/**
-	 * getUserIDByPhoneNumber
+	 * register
 	 * 
-	 * @param phoneNumber {@link String}
-	 * @return {@link String}
+	 * @param user {@link UserRequest}
+	 * @return {@link ResponseEntity}
 	 */
-	@GetMapping("/phone/{phoneNumber}")
-	public String getUserIDByPhoneNumber(@PathVariable String phoneNumber) {
-		return "";
+	@PostMapping("/register")
+	public ResponseEntity<UserResponse> register(@Valid @RequestBody UserRequest user)
+	{
+		UserRequest returnVal = userService.register(user);
+
+		return ResponseEntity.status(HttpStatus.CREATED)
+				.body(new UserResponse().setUserName(returnVal.getUserName()).setUserID(returnVal.getUserID()));
 	}
 }
