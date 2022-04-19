@@ -8,6 +8,11 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
 
+/**
+ * UserData
+ * 
+ * @version 1.0
+ */
 @Entity
 @Table(name = "t_userdata")
 public class UserData {
@@ -84,7 +89,7 @@ public class UserData {
 	/**
 	 * getUserID
 	 * 
-	 * @return userID {@link Integer}
+	 * @return userID Integer
 	 */
 	public String getUserID() {
 		return userID;
@@ -93,7 +98,7 @@ public class UserData {
 	/**
 	 * setUserID
 	 * 
-	 * @param userID {@link Integer}
+	 * @param userID Integer
 	 */
 	public void setUserID(String userID) {
 		this.userID = userID;
@@ -102,7 +107,7 @@ public class UserData {
 	/**
 	 * getUserName
 	 * 
-	 * @return userName {@link String}
+	 * @return userName String
 	 */
 	public String getUserName() {
 		return userName;
@@ -111,7 +116,7 @@ public class UserData {
 	/**
 	 * setUserName
 	 * 
-	 * @param userName {@link String}
+	 * @param userName String
 	 */
 	public void setUserName(String userName) {
 		this.userName = userName;
@@ -120,7 +125,7 @@ public class UserData {
 	/**
 	 * getEncryptedPassword
 	 * 
-	 * @return encryptedPassword {@link String}
+	 * @return encryptedPassword String
 	 */
 	public String getEncryptedPassword() {
 		return encryptedPassword;
@@ -129,7 +134,7 @@ public class UserData {
 	/**
 	 * setEncryptedPassword
 	 * 
-	 * @param encryptedPassword {@link String}
+	 * @param encryptedPassword String
 	 */
 	public void setEncryptedPassword(String encryptedPassword) {
 		this.encryptedPassword = encryptedPassword;
@@ -138,7 +143,7 @@ public class UserData {
 	/**
 	 * getFirstName
 	 * 
-	 * @return firstName {@link String}
+	 * @return firstName String
 	 */
 	public String getFirstName() {
 		return firstName;
@@ -147,7 +152,7 @@ public class UserData {
 	/**
 	 * setFirstName
 	 * 
-	 * @param firstName {@link String}
+	 * @param firstName String
 	 */
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
@@ -156,7 +161,7 @@ public class UserData {
 	/**
 	 * getLastName
 	 * 
-	 * @return lastName {@link String}
+	 * @return lastName String
 	 */
 	public String getLastName() {
 		return lastName;
@@ -165,7 +170,7 @@ public class UserData {
 	/**
 	 * setLastName
 	 * 
-	 * @param lastName {@link String}
+	 * @param lastName String
 	 */
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
@@ -174,7 +179,7 @@ public class UserData {
 	/**
 	 * getAddress
 	 * 
-	 * @return address {@link String}
+	 * @return address String
 	 */
 	public String getAddress() {
 		return address;
@@ -183,7 +188,7 @@ public class UserData {
 	/**
 	 * setAddress
 	 * 
-	 * @param address {@link String}
+	 * @param address String
 	 */
 	public void setAddress(String address) {
 		this.address = address;
@@ -192,7 +197,7 @@ public class UserData {
 	/**
 	 * getPhoneNumber
 	 * 
-	 * @return phoneNumber {@link String}
+	 * @return phoneNumber String
 	 */
 	public String getPhoneNumber() {
 		return phoneNumber;
@@ -201,7 +206,7 @@ public class UserData {
 	/**
 	 * setPhoneNumber
 	 * 
-	 * @param phoneNumber {@link String}
+	 * @param phoneNumber String
 	 */
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
@@ -210,7 +215,7 @@ public class UserData {
 	/**
 	 * getEmailID
 	 * 
-	 * @return emailID {@link String}
+	 * @return emailID String
 	 */
 	public String getEmailID() {
 		return emailID;
@@ -219,7 +224,7 @@ public class UserData {
 	/**
 	 * setEmailID
 	 * 
-	 * @param emailID {@link String}
+	 * @param emailID String
 	 */
 	public void setEmailID(String emailID) {
 		this.emailID = emailID;
@@ -228,7 +233,7 @@ public class UserData {
 	/**
 	 * getUniversityName
 	 * 
-	 * @return universityName {@link String}
+	 * @return universityName String
 	 */
 	public String getUniversityName() {
 		return universityName;
@@ -237,7 +242,7 @@ public class UserData {
 	/**
 	 * setUniversityName
 	 * 
-	 * @param universityName {@link String}
+	 * @param universityName String
 	 */
 	public void setUniversityName(String universityName) {
 		this.universityName = universityName;
@@ -246,7 +251,7 @@ public class UserData {
 	/**
 	 * getUserType
 	 * 
-	 * @return userType {@link String}
+	 * @return userType String
 	 */
 	public String getUserType() {
 		return userType;
@@ -255,7 +260,7 @@ public class UserData {
 	/**
 	 * setUserType
 	 * 
-	 * @param userType {@link String}
+	 * @param userType String
 	 */
 	public void setUserType(String userType) {
 		this.userType = userType;
@@ -264,7 +269,7 @@ public class UserData {
 	/**
 	 * getIsEnabled
 	 * 
-	 * @return isEnabled {@link Integer}
+	 * @return isEnabled int
 	 */
 	public int getIsEnabled() {
 		return isEnabled;
@@ -273,7 +278,7 @@ public class UserData {
 	/**
 	 * setIsEnabled
 	 * 
-	 * @param isEnabled {@link Integer}
+	 * @param isEnabled int
 	 */
 	public void setIsEnabled(int isEnabled) {
 		this.isEnabled = isEnabled;

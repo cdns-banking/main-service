@@ -6,6 +6,7 @@ import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
 
 import com.cdns.banking.main.model.UserData;
 import com.cdns.banking.main.model.UserRequest;
@@ -14,9 +15,9 @@ import com.cdns.banking.main.repository.MainRepository;
 /**
  * MainService
  * 
- * @author Deepu Prasad mathew 21017956
  * @version 1.0
  */
+@Service
 public class MainService {
 
 	/**

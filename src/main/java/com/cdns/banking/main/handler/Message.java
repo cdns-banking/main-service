@@ -3,7 +3,6 @@ package com.cdns.banking.main.handler;
 /**
  * Message
  * 
- * @author Deepu Prasad Mathew 21017956
  * @version 1.0
  */
 public class Message extends Object {

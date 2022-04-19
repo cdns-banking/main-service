@@ -4,6 +4,11 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+/**
+ * UserRequest
+ * 
+ * @version 1.0
+ */
 public class UserRequest {
 
 	/**
@@ -83,7 +88,7 @@ public class UserRequest {
 	/**
 	 * getUserID
 	 * 
-	 * @return userID {@link Integer}
+	 * @return userID Integer
 	 */
 	public String getUserID() {
 		return userID;
@@ -92,7 +97,7 @@ public class UserRequest {
 	/**
 	 * setUserID
 	 * 
-	 * @param userID {@link Integer}
+	 * @param userID Integer
 	 */
 	public void setUserID(String userID) {
 		this.userID = userID;
@@ -101,7 +106,7 @@ public class UserRequest {
 	/**
 	 * getUserName
 	 * 
-	 * @return userName {@link String}
+	 * @return userName String
 	 */
 	public String getUserName() {
 		return userName;
@@ -110,7 +115,7 @@ public class UserRequest {
 	/**
 	 * setUserName
 	 * 
-	 * @param userName {@link String}
+	 * @param userName String
 	 */
 	public void setUserName(String userName) {
 		this.userName = userName;
@@ -119,7 +124,7 @@ public class UserRequest {
 	/**
 	 * getFirstName
 	 * 
-	 * @return firstName {@link String}
+	 * @return firstName String
 	 */
 	public String getFirstName() {
 		return firstName;
@@ -128,7 +133,7 @@ public class UserRequest {
 	/**
 	 * setFirstName
 	 * 
-	 * @param firstName {@link String}
+	 * @param firstName String
 	 */
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
@@ -137,7 +142,7 @@ public class UserRequest {
 	/**
 	 * getLastName
 	 * 
-	 * @return lastName {@link String}
+	 * @return lastName String
 	 */
 	public String getLastName() {
 		return lastName;
@@ -146,7 +151,7 @@ public class UserRequest {
 	/**
 	 * setLastName
 	 * 
-	 * @param lastName {@link String}
+	 * @param lastName String
 	 */
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
@@ -155,7 +160,7 @@ public class UserRequest {
 	/**
 	 * getPassword
 	 * 
-	 * @return password {@link String}
+	 * @return password String
 	 */
 	public String getPassword() {
 		return password;
@@ -164,7 +169,7 @@ public class UserRequest {
 	/**
 	 * setPassword
 	 * 
-	 * @param password {@link String}
+	 * @param password String
 	 */
 	public void setPassword(String password) {
 		this.password = password;
@@ -173,7 +178,7 @@ public class UserRequest {
 	/**
 	 * getAddress
 	 * 
-	 * @return address {@link String}
+	 * @return address String
 	 */
 	public String getAddress() {
 		return address;
@@ -182,7 +187,7 @@ public class UserRequest {
 	/**
 	 * setAddress
 	 * 
-	 * @param address {@link String}
+	 * @param address String
 	 */
 	public void setAddress(String address) {
 		this.address = address;
@@ -191,7 +196,7 @@ public class UserRequest {
 	/**
 	 * getPhoneNumber
 	 * 
-	 * @return phoneNumber {@link String}
+	 * @return phoneNumber String
 	 */
 	public String getPhoneNumber() {
 		return phoneNumber;
@@ -200,7 +205,7 @@ public class UserRequest {
 	/**
 	 * setPhoneNumber
 	 * 
-	 * @param phoneNumber {@link String}
+	 * @param phoneNumber String
 	 */
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
@@ -209,7 +214,7 @@ public class UserRequest {
 	/**
 	 * getEmailID
 	 * 
-	 * @return emailID {@link String}
+	 * @return emailID String
 	 */
 	public String getEmailID() {
 		return emailID;
@@ -218,7 +223,7 @@ public class UserRequest {
 	/**
 	 * setEmailID
 	 * 
-	 * @param emailID {@link String}
+	 * @param emailID String
 	 */
 	public void setEmailID(String emailID) {
 		this.emailID = emailID;
@@ -227,7 +232,7 @@ public class UserRequest {
 	/**
 	 * getUniversityName
 	 * 
-	 * @return universityName {@link String}
+	 * @return universityName String
 	 */
 	public String getUniversityName() {
 		return universityName;
@@ -236,7 +241,7 @@ public class UserRequest {
 	/**
 	 * setUniversityName
 	 * 
-	 * @param universityName {@link String}
+	 * @param universityName String
 	 */
 	public void setUniversityName(String universityName) {
 		this.universityName = universityName;
@@ -245,7 +250,7 @@ public class UserRequest {
 	/**
 	 * getUserType
 	 * 
-	 * @return userType {@link String}
+	 * @return userType String
 	 */
 	public String getUserType() {
 		return userType;
@@ -254,7 +259,7 @@ public class UserRequest {
 	/**
 	 * setUserType
 	 * 
-	 * @param userType {@link String}
+	 * @param userType String
 	 */
 	public void setUserType(String userType) {
 		this.userType = userType;
@@ -263,7 +268,7 @@ public class UserRequest {
 	/**
 	 * getIsEnabled
 	 * 
-	 * @return isEnabled {@link Integer}
+	 * @return isEnabled Integer
 	 */
 	public int getIsEnabled() {
 		return isEnabled;
@@ -272,7 +277,7 @@ public class UserRequest {
 	/**
 	 * setIsEnabled
 	 * 
-	 * @param isEnabled {@link Integer}
+	 * @param isEnabled Integer
 	 */
 	public void setIsEnabled(int isEnabled) {
 		this.isEnabled = isEnabled;
@@ -281,7 +286,7 @@ public class UserRequest {
 	/**
 	 * getEncryptedPassword
 	 * 
-	 * @return encryptedPassword {@link String}
+	 * @return encryptedPassword String
 	 */
 	public String getEncryptedPassword() {
 		return encryptedPassword;
@@ -290,7 +295,7 @@ public class UserRequest {
 	/**
 	 * setEncryptedPassword
 	 * 
-	 * @param encryptedPassword {@link String}
+	 * @param encryptedPassword String
 	 */
 	public void setEncryptedPassword(String encryptedPassword) {
 		this.encryptedPassword = encryptedPassword;

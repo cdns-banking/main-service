@@ -3,7 +3,6 @@ package com.cdns.banking.main.model;
 /**
  * UserResponse
  * 
- * @author Deepu Prasad Mathew 21017956
  * @version 1.0
  */
 public class UserResponse {
@@ -21,7 +20,7 @@ public class UserResponse {
 	/**
 	 * getUserName
 	 * 
-	 * @return userName {@link String}
+	 * @return userName String
 	 */
 	public String getUserName() {
 		return userName;
@@ -30,8 +29,8 @@ public class UserResponse {
 	/**
 	 * setUserName
 	 * 
-	 * @param userName {@link String}
-	 * @return {@link UserResponse}
+	 * @param userName String
+	 * @return UserResponse
 	 */
 	public UserResponse setUserName(String userName) {
 		this.userName = userName;
@@ -41,7 +40,7 @@ public class UserResponse {
 	/**
 	 * getUserID
 	 * 
-	 * @return userID {@link Integer}
+	 * @return userID Integer
 	 */
 	public String getUserID() {
 		return userID;
@@ -50,8 +49,8 @@ public class UserResponse {
 	/**
 	 * setUserID
 	 * 
-	 * @param userID {@link Integer}
-	 * @return {@link UserResponse}
+	 * @param userID Integer
+	 * @return UserResponse
 	 */
 	public UserResponse setUserID(String userID) {
 		this.userID = userID;

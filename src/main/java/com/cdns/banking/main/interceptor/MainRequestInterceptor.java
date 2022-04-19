@@ -15,7 +15,6 @@ import com.cdns.banking.main.interceptor.context.IContextObject;
 /**
  * MainRequestInterceptor
  * 
- * @author Deepu Prasad Mathew
  * @version 1.0
  */
 public class MainRequestInterceptor implements ClientRequestInterceptor {
@@ -42,6 +41,9 @@ public class MainRequestInterceptor implements ClientRequestInterceptor {
 		}
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public void onPostMarshalRequest(final IContextObject context) {
 		LOGGER.info("Response : " + context.getResponse().getStatus());

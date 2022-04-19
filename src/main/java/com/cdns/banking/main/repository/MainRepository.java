@@ -7,10 +7,10 @@ import com.cdns.banking.main.model.UserData;
 /**
  * MainRepository
  * 
- * @author Deepu Prasad Mathew 21017956
  * @version 1.0
  */
 public interface MainRepository extends CrudRepository<UserData, String> {
+
 	/**
 	 * findByUserName
 	 * 
@@ -22,8 +22,8 @@ public interface MainRepository extends CrudRepository<UserData, String> {
 	/**
 	 * findByPhoneNumber
 	 * 
-	 * @param phoneNumber {@link String}
-	 * @return {@link UserEntity}
+	 * @param phoneNumber String
+	 * @return UserEntity
 	 */
 	UserData findByPhoneNumber(String phoneNumber);
 }

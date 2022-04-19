@@ -6,7 +6,6 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * IContextObject
  * 
- * @author Deepu Prasad Mathew 21017956
  * @version 1.0
  */
 public interface IContextObject {

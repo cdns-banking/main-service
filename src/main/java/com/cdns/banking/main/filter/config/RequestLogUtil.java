@@ -10,7 +10,6 @@ import org.springframework.web.util.WebUtils;
 /**
  * RequestLogUtil
  * 
- * @author Deepu Prasad Mathew 21017956
  * @version 1.0
  */
 public class RequestLogUtil {

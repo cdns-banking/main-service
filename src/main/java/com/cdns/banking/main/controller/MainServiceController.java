@@ -17,7 +17,6 @@ import com.cdns.banking.main.service.MainService;
 /**
  * MainServiceController
  * 
- * @author Deepu Prasad Mathew 21017956
  * @version 1.0
  */
 @RestController
@@ -29,16 +28,15 @@ public class MainServiceController {
 	 */
 	@Autowired
 	private MainService userService;
-	
+
 	/**
 	 * register
 	 * 
-	 * @param user {@link UserRequest}
-	 * @return {@link ResponseEntity}
+	 * @param user UserRequest
+	 * @return ResponseEntity<UserResponse>
 	 */
 	@PostMapping("/register")
-	public ResponseEntity<UserResponse> register(@Valid @RequestBody UserRequest user)
-	{
+	public ResponseEntity<UserResponse> register(@Valid @RequestBody UserRequest user) {
 		UserRequest returnVal = userService.register(user);
 
 		return ResponseEntity.status(HttpStatus.CREATED)
