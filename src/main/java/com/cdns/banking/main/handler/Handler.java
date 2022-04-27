@@ -35,6 +35,15 @@ public class Handler extends Object {
 	}
 
 	/**
+	 * hasMessages
+	 * 
+	 * @return boolean
+	 */
+	public final boolean hasMessages() {
+		return !messages.isEmpty();
+	}
+
+	/**
 	 * obtainMessage
 	 * 
 	 * @param what Message
@@ -47,24 +56,6 @@ public class Handler extends Object {
 	}
 
 	/**
-	 * handleMessage
-	 * 
-	 * @param msg Message
-	 */
-	public void handleMessage(Message msg) {
-		messages.remove(msg);
-	}
-
-	/**
-	 * hasMessages
-	 * 
-	 * @return boolean
-	 */
-	public final boolean hasMessages() {
-		return !messages.isEmpty();
-	}
-
-	/**
 	 * postDelayed
 	 * 
 	 * @param runnable Runnable
@@ -72,5 +63,14 @@ public class Handler extends Object {
 	 */
 	public void postDelayed(Runnable runnable, int i) {
 
+	}
+
+	/**
+	 * handleMessage
+	 * 
+	 * @param msg Message
+	 */
+	public void handleMessage(Message msg) {
+		messages.remove(msg);
 	}
 }

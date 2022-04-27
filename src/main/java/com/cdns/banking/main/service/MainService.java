@@ -43,7 +43,7 @@ public class MainService {
 		modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
 
 		UserData userData = modelMapper.map(request, UserData.class);
-		userData.setEncryptedPassword(bCryptPasswordEncoder.encode(request.getPassword()));
+		userData.setPassword(bCryptPasswordEncoder.encode(request.getPassword()));
 
 		return modelMapper.map(repository.save(userData), UserRequest.class);
 	}

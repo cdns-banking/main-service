@@ -27,7 +27,7 @@ public class MainServiceController {
 	 * userService
 	 */
 	@Autowired
-	private MainService userService;
+	private MainService mainService;
 
 	/**
 	 * register
@@ -37,7 +37,7 @@ public class MainServiceController {
 	 */
 	@PostMapping("/register")
 	public ResponseEntity<UserResponse> register(@Valid @RequestBody UserRequest user) {
-		UserRequest returnVal = userService.register(user);
+		UserRequest returnVal = mainService.register(user);
 
 		return ResponseEntity.status(HttpStatus.CREATED)
 				.body(new UserResponse().setUserName(returnVal.getUserName()).setUserID(returnVal.getUserID()));

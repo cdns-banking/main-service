@@ -36,7 +36,7 @@ public class UserData {
 	 * encryptedPassword
 	 */
 	@Column(name = "user_password", nullable = false, length = 32)
-	private String encryptedPassword;
+	private String password;
 
 	/**
 	 * firstName
@@ -123,21 +123,21 @@ public class UserData {
 	}
 
 	/**
-	 * getEncryptedPassword
+	 * getPassword
 	 * 
-	 * @return encryptedPassword String
+	 * @return password String
 	 */
-	public String getEncryptedPassword() {
-		return encryptedPassword;
+	public String getPassword() {
+		return password;
 	}
 
 	/**
-	 * setEncryptedPassword
+	 * setPassword
 	 * 
-	 * @param encryptedPassword String
+	 * @param password String
 	 */
-	public void setEncryptedPassword(String encryptedPassword) {
-		this.encryptedPassword = encryptedPassword;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	/**
